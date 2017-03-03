@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Humerus</RootNamespace>
+    <AssemblyName>Humerus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Decoder\DecodeResult.cs" />
+    <Compile Include="Decoder\Decoder.cs" />
+    <Compile Include="Disassembler\Branch.cs" />
+    <Compile Include="Utils\BitExtensions.cs" />
+    <Compile Include="Disassembler\Disassembler.cs" />
+    <Compile Include="Utils\DisassemblerUtils.cs" />
+    <Compile Include="Disassembler\Miscellaneous.cs" />
+    <Compile Include="Disassembler\Hint.cs" />
+    <Compile Include="Disassembler\ParallelAddSubtract.cs" />
+    <Compile Include="Disassembler\Divide.cs" />
+    <Compile Include="Disassembler\BitField.cs" />
+    <Compile Include="Disassembler\UnsignedSumAbsoluteDifference.cs" />
+    <Compile Include="Disassembler\Saturation.cs" />
+    <Compile Include="Disassembler\Barrier.cs" />
+    <Compile Include="Disassembler\Synchronization.cs" />
+    <Compile Include="Disassembler\Extension.cs" />
+    <Compile Include="Disassembler\Reversal.cs" />
+    <Compile Include="Disassembler\SelectionAndPacking.cs" />
+    <Compile Include="Disassembler\SignedMultiply.cs" />
+    <Compile Include="Disassembler\HalfwordMultiply.cs" />
+    <Compile Include="Disassembler\Multiply.cs" />
+    <Compile Include="Disassembler\DataProcessing.cs" />
+    <Compile Include="Disassembler\LoadStoreMultiple.cs" />
+    <Compile Include="Disassembler\LoadStore.cs" />
+    <Compile Include="Disassembler\Coprocessor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Decoder\" />
+    <Folder Include="Disassembler\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

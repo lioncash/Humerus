@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Humerus", "Humerus\Humerus.csproj", "{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{540D70E4-2FE8-440E-A8AC-C6C8153480F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{9AD3F22C-EB4E-4E2A-9ABB-E9CFEE2156CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540D70E4-2FE8-440E-A8AC-C6C8153480F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540D70E4-2FE8-440E-A8AC-C6C8153480F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540D70E4-2FE8-440E-A8AC-C6C8153480F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540D70E4-2FE8-440E-A8AC-C6C8153480F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD3F22C-EB4E-4E2A-9ABB-E9CFEE2156CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD3F22C-EB4E-4E2A-9ABB-E9CFEE2156CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD3F22C-EB4E-4E2A-9ABB-E9CFEE2156CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD3F22C-EB4E-4E2A-9ABB-E9CFEE2156CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

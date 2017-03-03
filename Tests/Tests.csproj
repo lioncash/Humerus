@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AD3F22C-EB4E-4E2A-9ABB-E9CFEE2156CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BranchTests.cs" />
+    <Compile Include="MiscellaneousTests.cs" />
+    <Compile Include="HintTests.cs" />
+    <Compile Include="ParallelAddSubTests.cs" />
+    <Compile Include="DivideTests.cs" />
+    <Compile Include="BitFieldTests.cs" />
+    <Compile Include="UnsignedSumAbsoluteDifferenceTests.cs" />
+    <Compile Include="SaturationTests.cs" />
+    <Compile Include="BarrierTests.cs" />
+    <Compile Include="SynchronizationTests.cs" />
+    <Compile Include="ExtensionTests.cs" />
+    <Compile Include="ReversalTests.cs" />
+    <Compile Include="SelectionAndPackingTests.cs" />
+    <Compile Include="SignedMultiplyTests.cs" />
+    <Compile Include="HalfwordMultiplyTests.cs" />
+    <Compile Include="MultiplyTests.cs" />
+    <Compile Include="DataProcessingTests.cs" />
+    <Compile Include="LoadStoreMultipleTests.cs" />
+    <Compile Include="LoadStoreTests.cs" />
+    <Compile Include="CoprocessorTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Humerus\Humerus.csproj">
+      <Project>{BCA180FC-B311-4099-A0ED-088E6DFEAEA0}</Project>
+      <Name>Humerus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
